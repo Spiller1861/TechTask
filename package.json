@@ -1,0 +1,21 @@
+{
+	"name": "test",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "npm --prefix server dev",
+		"build": "npm --prefix client run build && npm --prefix server run build",
+		"dev": "concurrently \"npm --prefix server run dev\" \"npm --prefix client start\""
+	},
+	"dependencies": {
+		"jest": "^26.6.0",
+		"react": "^17.0.2",
+		"concurrently": "^7.6.0",
+		"react-dom": "^17.0.2",
+		"react-scripts": "^4.0.3"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC"
+}
